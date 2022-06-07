@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins';
+}
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+.card{
+  width: 300px;
+  height: 300px;
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 3px 3px 5px rgb(225, 225, 225);
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  overflow: hidden;
+}
+.card:hover{
+  box-shadow: 3px 3px 5px rgb(148, 148, 148);
+}
+.numberBox{
+  border-radius: 100px;
+  transform: translate(520%, 520%);
+  background: rgb(157, 62, 62);
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translate(520%, 520%);
+  -moz-transform: translate(520%, 520%);
+  -ms-transform: translate(520%, 520%);
+  -o-transform: translate(520%, 520%);
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: all ease 0.3s;
+}
+.number{
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  transition: all ease 0.3s;
+}
+.card:hover .numberBox{
+  transform: translate(490%, 490%);
+  -webkit-transform: translate(490%, 490%);
+  -moz-transform: translate(490%, 490%);
+  -ms-transform: translate(490%, 490%);
+  -o-transform: translate(490%, 490%);
+}
+.card:hover .number{
+  top: 11px;
+  left: 18px;
+}
+.title{
+  position: absolute;
+  margin: 10px 0 0 20px;
+  font-size: 27px;
+}
+.word{
+  position: absolute;
+  padding: 50px 0 0 40px;
+  font-size: 14px;
+}
+/* 600 */
+
+@media (max-width: 600px) {
+  .card{
+    margin-top: 50px;
+  }
+}
